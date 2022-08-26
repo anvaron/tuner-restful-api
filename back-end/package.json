@@ -1,16 +1,14 @@
 {
   "name": "tuner-restful-api",
   "version": "1.0.0",
-  "engines": {
-    "node": "17.2.0"
-  },
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start" : "node app.js",
     "dbinit": "psql -U postgres -f db/schema.sql",
     "dbseed": "psql -U postgres -f db/seed.sql",
-    "test": "jest --runInBand"
+    "start": "node server.js",
+    "test": "jest --runInBand",
+    "database": "psql -U postgres -f db/schema.sql && psql -U postgres -f db/seed.sql"
   },
   "repository": {
     "type": "git",
