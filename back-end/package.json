@@ -1,19 +1,20 @@
 {
-  "name": "tuner-full-stack-app",
+  "name": "tuner-restful-api",
   "version": "1.0.0",
   "engines": {
-  "node": "17.2.0"
+    "node": "17.2.0"
   },
-  "description": "Starter code for student lab",
+  "description": "",
   "main": "server.js",
   "scripts": {
-  "dbinit": "psql -U postgres -f db/schema.sql",
-  "dbseed": "psql -U postgres -f db/seed.sql",
-  "test": "jest --runInBand"
+    "start" : "node app.js",
+    "dbinit": "psql -U postgres -f db/schema.sql",
+    "dbseed": "psql -U postgres -f db/seed.sql",
+    "test": "jest --runInBand"
   },
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/joinpursuit/tuner-full-stack-app.git"
+    "type": "git",
+    "url": "git+https://github.com/joinpursuit/tuner-full-stack-app.git"
   },
   "author": "K. Rafalski",
   "license": "ISC",
